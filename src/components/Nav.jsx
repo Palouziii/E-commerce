@@ -6,8 +6,8 @@ export default function NavBar() {
   return (
     <Navbar bg="primary" variant="dark">
       <Container fluid>
-        <Navbar.Brand className="m-3 fs-4">
-          <img src={logo} width="30" height="30" alt="logo" />
+        <Navbar.Brand className="m-2 fs-4">
+          <img src={logo} width="60" height="60" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
 
@@ -15,6 +15,9 @@ export default function NavBar() {
           <Nav className="text-center fs-3">
             <Nav.Link className="mx-2" as={Link} to={"/"}>
               Home
+            </Nav.Link>
+            <Nav.Link className="mx-2" as={Link} to={"/product"}>
+              Product
             </Nav.Link>
             <Nav.Link className="mx-2" as={Link} to={"/cart"}>
               Cart
@@ -27,9 +30,6 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link className="mx-2" as={Link} to={"/productDetail"}>
               ProductDetail
-            </Nav.Link>
-            <Nav.Link className="mx-2" as={Link} to={"/product"}>
-              Product
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
