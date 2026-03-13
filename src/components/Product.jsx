@@ -1,11 +1,11 @@
 export default function Product({ product }) {
   return (
-    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center ">
+    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
       <div class="col shadow-lg p-2 mb-5 bg-body-tertiary rounded">
         <div class="card h-100 text-center shadow-sm">
           <img
             src={product.image}
-            class="card-img-top w-25 mx-auto mt-3"
+            class="card-img-top w-25 mx-auto mt-3 rounded"
             alt={product.name}
           />
 
